@@ -44,6 +44,13 @@ export const SUSHI: ChainTokenMap = {
         'SUSHI',
         'SushiToken'
     ),
+    [ChainId.BSC_TESTNET]: new Token(
+        ChainId.BSC_TESTNET,
+        '0x4A0382ba999DdE2a3aF747061Fe5484149701692',
+        18,
+        'SUSHI',
+        'SushiToken'
+    ),
     [ChainId.GÖRLI]: new Token(ChainId.GÖRLI, '0x0769fd68dFb93167989C6f7254cd0D766Fb2841F', 18, 'SUSHI', 'SushiToken'),
     [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x0769fd68dFb93167989C6f7254cd0D766Fb2841F', 18, 'SUSHI', 'SushiToken'),
     [ChainId.FANTOM]: new Token(ChainId.FANTOM, '0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC', 18, 'SUSHI', 'SushiToken')
@@ -72,6 +79,13 @@ export const REGO: ChainTokenMap = {
         'REGO',
         'RegoToken'
     ),
+    [ChainId.BSC_TESTNET]: new Token(
+        ChainId.BSC_TESTNET,
+        '0x4A0382ba999DdE2a3aF747061Fe5484149701692',
+        18,
+        'REGO',
+        'RegoToken'
+    ),
     [ChainId.BSC]: new Token(
         ChainId.BSC,
         '0xC456D84D202FcB97E29Fc2dce20aC613434C8065',  
@@ -79,6 +93,7 @@ export const REGO: ChainTokenMap = {
         'REGO',
         'RegoToken'
     )
+
     
 }
 
@@ -104,6 +119,13 @@ export const xREGO: ChainTokenMap = {
         ChainId.BSC,
         '0xAF53b5f1AE51ae5Fe554912A7a2649Ebb90074E7',     
          18,
+        'xREGO',
+        'RegoBar'
+    ),
+    [ChainId.BSC_TESTNET]: new Token(
+        ChainId.BSC_TESTNET,
+        '0x82C6727ee76f5A03bAA1c4372A848EB5b7C5E8A5',
+        18,
         'xREGO',
         'RegoBar'
     ),

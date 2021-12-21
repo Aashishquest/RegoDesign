@@ -152,6 +152,12 @@ export default function StakeCard({ sushiBalance, xSushiBalance }: StakeCardProp
             parsedInput.value.toString()
         )
         :
+        (chainId === 97)
+        ? new TokenAmount(
+            new Token(97, '0x4A0382ba999DdE2a3aF747061Fe5484149701692', 18, 'REGO', ''),
+            parsedInput.value.toString()
+        )
+        :
         (chainId === 56)
         ? new TokenAmount(
             new Token(56, '0xC456D84D202FcB97E29Fc2dce20aC613434C8065', 18, 'REGO', ''),   
@@ -162,7 +168,7 @@ export default function StakeCard({ sushiBalance, xSushiBalance }: StakeCardProp
             new Token(1, '0xbea6aff7067d1db51145039c6484a9b670c705ad', 18, 'REGO', ''),     //address need to change
             parsedInput.value.toString()
         ),
-        (chainId === 137) ? BAR_ADDRESS[137] :(chainId === 4) ? BAR_ADDRESS[4] :(chainId === 56) ? BAR_ADDRESS[56] : BAR_ADDRESS[1]  
+        (chainId === 137) ? BAR_ADDRESS[137] :(chainId === 4) ? BAR_ADDRESS[4] :(chainId === 97) ? BAR_ADDRESS[97] :(chainId === 56) ? BAR_ADDRESS[56] : BAR_ADDRESS[1]  
     )
 
     console.log('approvalState:', approvalState, parsedInput.value.toString())

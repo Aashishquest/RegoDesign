@@ -44,7 +44,7 @@ export default function SwapHeader({ input = undefined, output = undefined }: an
                     Limit Order
                 </NavLink> */}
                  {chainId &&
-               [ChainId.RINKEBY, ChainId.BSC].includes(chainId) && (
+               [ChainId.RINKEBY, ChainId.BSC, ChainId.BSC_TESTNET].includes(chainId) && (
                 <NavLink
                     className="flex-col flex items-center pb-4 pt-3 justify-center px-4 md:px-10 text-center text-secondary hover:text-high-emphesis text-base font-medium"
                     activeClassName="text-high-emphesis font-bold bg-dark-825"

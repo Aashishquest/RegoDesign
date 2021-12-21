@@ -60,7 +60,7 @@ function AppBar(): JSX.Element {
                                             </NavLink>
 
                                            {chainId &&
-                                                [ChainId.RINKEBY, ChainId.BSC].includes(chainId) && (
+                                                [ChainId.RINKEBY, ChainId.BSC, ChainId.BSC_TESTNET].includes(chainId) && (
                                             <NavLink
                                                 id={`pool-nav-link`}
                                                 to={'/pool'}
@@ -82,7 +82,7 @@ function AppBar(): JSX.Element {
                                                 </NavLink>
                                             )}
                                              {chainId &&
-                                                [ChainId.RINKEBY].includes(chainId) && (
+                                                [ChainId.RINKEBY , ChainId.BSC_TESTNET].includes(chainId) && (
                                                 <NavLink id={`sushibar-nav-link`} to={'/Regobar'}>
                                                     {i18n._(t`RegoBar`)}
                                                 </NavLink>
@@ -195,7 +195,7 @@ function AppBar(): JSX.Element {
                                             )} */}
 
                                          {chainId &&
-                                            [ ChainId.RINKEBY].includes(chainId) &&
+                                            [ ChainId.RINKEBY, ChainId.BSC_TESTNET].includes(chainId) &&
                                             library &&
                                             library.provider.isMetaMask && (
                                                 <>
@@ -238,6 +238,11 @@ function AppBar(): JSX.Element {
                                                                         address =
                                                                             '0x00EAbc1D044764cc9e959954698426326247b1c4'
                                                                         break
+
+                                                                    case ChainId.BSC_TESTNET:
+                                                                            address =
+                                                                                '0x82C6727ee76f5A03bAA1c4372A848EB5b7C5E8A5'
+                                                                            break
                                                                 }
                                                                 const params: any = {
                                                                     type: 'ERC20',
@@ -290,11 +295,11 @@ function AppBar(): JSX.Element {
                                             )}
 
                                         {chainId &&
-                                         [ ChainId.RINKEBY, ChainId.BSC].includes(chainId) &&
+                                         [ ChainId.RINKEBY, ChainId.BSC , ChainId.BSC_TESTNET].includes(chainId) &&
                                             library &&
                                             library.provider.isMetaMask && (
                                                 <>
- <QuestionHelper text={i18n._(t`Add REGO to your Metamask wallet`)}>
+                                                 <QuestionHelper text={i18n._(t`Add REGO to your Metamask wallet`)}>
                                                         <div
                                                             className="hidden sm:inline-block rounded-md bg-dark-1000 hover:bg-dark-800 cursor-pointer"
                                                             onClick={() => {
@@ -315,6 +320,11 @@ function AppBar(): JSX.Element {
                                                                     case ChainId.RINKEBY:
                                                                         address =
                                                                             '0x26053DBBB42292C715C8405511d3EB9e5da032A7'
+                                                                        break
+                                                                    
+                                                                    case ChainId.BSC_TESTNET:
+                                                                        address =
+                                                                            '0x4A0382ba999DdE2a3aF747061Fe5484149701692'
                                                                         break
                                                                 }
                                                                 const params: any = {
@@ -384,7 +394,7 @@ function AppBar(): JSX.Element {
                                         {library && library.provider.isMetaMask && (
                                             <div className="hidden sm:inline-block">
                                                  {chainId &&
-                                            [ ChainId.RINKEBY, ChainId.BSC].includes(chainId) &&
+                                            [ ChainId.RINKEBY, ChainId.BSC, ChainId.BSC_TESTNET].includes(chainId) &&
                                                 <Web3Network />
                                                 }
                                             </div>
@@ -392,7 +402,7 @@ function AppBar(): JSX.Element {
                                         {library && library.provider.isMetaMask && (
                                            
                                         <div className="w-auto flex items-center rounded bg-dark-900 p-0.5 whitespace-nowrap text-sm font-bold cursor-pointer select-none pointer-events-auto">
-                                         {chainId && chainId !== ChainId.RINKEBY && chainId !== ChainId.BSC &&  ( 
+                                         {chainId && chainId !== ChainId.RINKEBY && chainId !== ChainId.BSC && chainId !== ChainId.BSC_TESTNET && ( 
                                        
                                          <ButtonError onClick={() => {window.alert(
                                             i18n._(t`Please Choose Correct Network`)
@@ -409,7 +419,7 @@ function AppBar(): JSX.Element {
                                             {account && chainId && userEthBalance && (
                                                 <>
                                                   {chainId && 
-                                                     [ ChainId.RINKEBY, ChainId.BSC].includes(chainId) &&
+                                                     [ ChainId.RINKEBY, ChainId.BSC , ChainId.BSC_TESTNET].includes(chainId) &&
                                                     <div className="py-2 px-3 text-primary text-bold">
                                                   
                                                         {userEthBalance?.toSignificant(4)}{' '}
@@ -460,7 +470,7 @@ function AppBar(): JSX.Element {
                                     {i18n._(t`Swap`)}
                                 </NavLink>
 
-                            {chainId && [ChainId.RINKEBY, ChainId.BSC].includes(chainId) && (
+                            {chainId && [ChainId.RINKEBY, ChainId.BSC, ChainId.BSC_TESTNET].includes(chainId) && (
                                 <NavLink
                                     id={`pool-nav-link`}
                                     to={'/pool'}
@@ -493,7 +503,7 @@ function AppBar(): JSX.Element {
                                         </NavLink>
                                     )} */}
                                 {chainId &&
-                                    [ ChainId.RINKEBY].includes(chainId) && (
+                                    [ ChainId.RINKEBY, ChainId.BSC_TESTNET].includes(chainId) && (
                                         <NavLink id={`stake-nav-link`} to={'/Regobar'}>
                                             {i18n._(t`RegoBar`)}
                                     </NavLink>

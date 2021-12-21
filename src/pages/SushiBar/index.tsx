@@ -37,6 +37,10 @@ export default function XSushi() {
         ? 
         REGO[ChainId.RINKEBY ]?.address ?? ''
         :
+        (chainId === ChainId.BSC_TESTNET)
+        ? 
+        REGO[ChainId.BSC_TESTNET ]?.address ?? ''
+        :
         (chainId === ChainId.MAINNET)
         ? 
         REGO[ChainId.MAINNET ]?.address ?? ''
@@ -52,6 +56,10 @@ export default function XSushi() {
         (chainId === ChainId.RINKEBY)
         ?
         xREGO[ChainId.RINKEBY]?.address ?? ''
+        :
+        (chainId === ChainId.BSC_TESTNET)
+        ?
+        xREGO[ChainId.BSC_TESTNET]?.address ?? ''
         :
         (chainId === ChainId.MAINNET)
         ?

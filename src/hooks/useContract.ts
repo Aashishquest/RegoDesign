@@ -122,6 +122,9 @@ export function useENSRegistrarContract(withSignerIfPossible?: boolean): Contrac
             case ChainId.RINKEBY:
                 address = '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e'
                 break
+            case ChainId.BSC_TESTNET:
+                address = '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e'
+                break
         }
     }
     return useContract(address, ENS_ABI, withSignerIfPossible)
@@ -185,6 +188,9 @@ export function useMasterChefV2Contract(withSignerIfPossible?: boolean): Contrac
             case ChainId.RINKEBY:  // earlier it was MAINNET
                 address = '0x6A8F712294e9Eb20BE7C6Aa9208B769176Eefbf4' // This was placed earlier 0xEF0881eC094552b2e128Cf945EF17a6752B4Ec5d
                 break
+            case ChainId.BSC_TESTNET:  // earlier it was MAINNET
+                address = '0x6A8F712294e9Eb20BE7C6Aa9208B769176Eefbf4' // This was placed earlier 0xEF0881eC094552b2e128Cf945EF17a6752B4Ec5d
+                break
         }
     }
     return useContract(address, MASTERCHEFV2_ABI, withSignerIfPossible)
@@ -196,6 +202,9 @@ export function useMiniChefV2Contract(withSignerIfPossible?: boolean): Contract 
     if (chainId) {
         switch (chainId) {
             case ChainId.RINKEBY:
+                address = '0x6A8F712294e9Eb20BE7C6Aa9208B769176Eefbf4'
+                break
+            case ChainId.BSC_TESTNET:
                 address = '0x6A8F712294e9Eb20BE7C6Aa9208B769176Eefbf4'
                 break
         }

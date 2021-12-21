@@ -81,16 +81,16 @@ function Routes(): JSX.Element {
             )}
 
             {/* Regobar Staking */}
-            {(chainId === ChainId.MAINNET ||  chainId === ChainId.RINKEBY) && ( 
+            {(chainId === ChainId.MAINNET ||  chainId === ChainId.RINKEBY   || chainId === ChainId.BSC_TESTNET) && ( 
             <Route exact strict path="/Regobar" component={SushiBar} />
             )}
-            {(chainId === ChainId.MAINNET || chainId === ChainId.RINKEBY ) && (
+            {(chainId === ChainId.MAINNET || chainId === ChainId.RINKEBY || chainId === ChainId.BSC_TESTNET) && (
                 <Route exact strict path="/sushibar/transactions" component={SushiBarTransactions} />
             )}
-            {(chainId === ChainId.MAINNET ||  chainId === ChainId.RINKEBY ) && ( 
+            {(chainId === ChainId.MAINNET ||  chainId === ChainId.RINKEBY  || chainId === ChainId.BSC_TESTNET) && ( 
             <Route exact strict path="/sushibar/tips" component={SushiBarTips} />
             )}
-            {(chainId === ChainId.MAINNET ||  chainId === ChainId.RINKEBY ) && ( 
+            {(chainId === ChainId.MAINNET ||  chainId === ChainId.RINKEBY  || chainId === ChainId.BSC_TESTNET) && ( 
             <Route exact strict path="/stake" component={SushiBar} />
             )}
             {/* Tools */}
