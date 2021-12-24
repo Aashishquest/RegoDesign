@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { formattedNum, formattedPercent } from '../../../../utils'
 import { DoubleLogo, Paper } from '../../components'
-import DEFAULT_TOKEN_LIST from 'quest-switchswap-default-token-list'
+import DEFAULT_TOKEN_LIST from 'quest-regoswap-default-token-list'
 import { MasterChefV1Details, MasterChefV2Details, MiniChefDetails } from '../Details'
 import { useActiveWeb3React } from '../../../../hooks/useActiveWeb3React'
 import { ChainId } from 'quest-regoswap-sdk'
