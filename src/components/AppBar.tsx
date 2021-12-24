@@ -55,6 +55,13 @@ function AppBar(): JSX.Element {
                                     <div className="hidden sm:block sm:ml-4">
                                         <div className="flex space-x-2">
 
+                                        <ExternalLink
+                                                 id={`analytics-nav-link`}
+                                                href={'https://regoex.com/'}
+                                                    >
+                                                    {i18n._(t`Home`)}
+                                            </ExternalLink>
+
                                            <NavLink id={`swap-nav-link`} to={'/swap'}>
                                                 {i18n._(t`Swap`)}
                                             </NavLink>
