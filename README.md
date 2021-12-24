@@ -1,19 +1,19 @@
-# SushiSwap Interface
+# RegoSwap Interface
 
 [![Styled With Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io/)
 
-An open source interface for SushiSwap -- a protocol for decentralized exchange of Ethereum tokens.
+An open source interface for RegoSwap -- a protocol for decentralized exchange of Ethereum tokens.
 
-- Website: [sushi.com](https://sushi.com/)
-- Interface: [app.sushi.com](https://app.sushi.com)
+- Website: [regoex.com](https://regoex.com/)
+- Interface: [regoswapbsctestnet.netlify.app](https://regoswapbsctestnet.netlify.app/)
 - Docs: [sushiswap.gitbook.io](https://sushiswap.gitbook.io)
-- Twitter: [@SushiSwap](https://twitter.com/sushiswap)
+- Twitter: [@Regoexch](https://twitter.com/regoexch)
 - Reddit: [/r/SushiSwap](https://www.reddit.com/r/SushiSwap)
-- Discord: [SushiSwap](https://discord.gg/Y7TF6QA)
+- Discord: []](https://discord.com/channels/921397558050447370/921397560592187435)
 
-## Accessing the SushiSwap Interface
+## Accessing the RegoSwap Interface
 
-To access the Sushiswap Interface, use an IPFS gateway link from the
+To access the Regoswap Interface, use an IPFS gateway link from the
 [latest release](https://github.com/sushiswap/sushiswap-interface/releases/latest),
 or visit [app.sushi.com](https://app.sushi.com).
 
@@ -38,7 +38,7 @@ yarn start
 ```
 
 Note that the interface only works on networks where both
-[(Uni|Sushi)swap V2](https://github.com/sushiswap/sushiswap/tree/master/contracts/uniswapv2) and
+[(Uni|Rego)swap V2](https://github.com/sushiswap/sushiswap/tree/master/contracts/uniswapv2) and
 [multicall](https://github.com/makerdao/multicall) are deployed.
 The interface will not work on other networks.
 

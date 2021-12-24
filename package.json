@@ -110,7 +110,7 @@
         "prettier": "^1.17.0",
         "qs": "^6.9.4",
         "quest-regoswap-default-token-list": "^1.0.0",
-        "quest-regoswap-sdk": "^1.0.3",
+        "quest-regoswap-sdk": "^1.0.4",
         "quest-switchswap-core": "1.0.2",
         "quest-switchswap-sushi-data": "^1.0.2",
         "react": "^17.0.2",
