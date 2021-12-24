@@ -158,6 +158,14 @@ export default function CurrencyInputPanel({
 
     const currencyUSDC = useUSDCPrice(currency ? currency : undefined)?.toFixed(18)
     const valueUSDC = formattedNum(Number(value) * Number(currencyUSDC))
+    function percentageInput(percentage:number) {
+        let balance=0;
+        if(selectedCurrencyBalance){
+            balance= Number(selectedCurrencyBalance?.toSignificant(6));
+            let s = balance* percentage;
+            onUserInput(String(s));
+        }
+    }
 
     return (
         <div id={id} className="rounded bg-dark-800 pt-5 pb-5 pl-3 pr-3">
@@ -205,6 +213,7 @@ export default function CurrencyInputPanel({
                             )}
                             <NumericalInput
                                 className="token-amount-input"
+                                id='inputValue'
                                 value={value}
                                 onUserInput={val => {
                                     onUserInput(val)
@@ -316,6 +325,49 @@ export default function CurrencyInputPanel({
                 </div>
                 
             </div>
+            {account && currency && showMaxButton && label !== 'To' && (
+                                <Button
+                                    onClick={()=>percentageInput(0.25)}
+                                    size="small"
+                                    className="bg-transparent hover:bg-primary border border-low-emphesis rounded-full text-secondary text-xs font-medium whitespace-nowrap" 
+                                >
+                                    
+                                    {i18n._(t`25%`)}
+                                </Button>
+                                
+            )}
+             {account && currency && showMaxButton && label !== 'To' && (
+                                <Button
+                                onClick={()=>percentageInput(0.5)}
+                                    size="small"
+                                    className="bg-transparent hover:bg-primary border border-low-emphesis rounded-full text-secondary text-xs font-medium whitespace-nowrap"
+                                >
+                                    {i18n._(t`50%`)}
+                                </Button>
+                                
+            )}
+               {account && currency && showMaxButton && label !== 'To' && (
+                                <Button
+                                onClick={()=>percentageInput(0.75)}
+                                    size="small"
+                                   
+                                    className="bg-transparent hover:bg-primary border border-low-emphesis rounded-full text-secondary text-xs font-medium whitespace-nowrap"
+                                >
+                                    {i18n._(t`75%`)}
+                                </Button>
+                                
+            )}
+{/* 
+            {account && currency && showMaxButton && label !== 'To' && (
+                            <Button
+                            onClick={()=>percentageInput(1)}
+                                size="small"
+                                className="bg-transparent hover:bg-primary border border-low-emphesis rounded-full text-secondary text-xs font-medium whitespace-nowrap"
+                            >
+                                {i18n._(t`100%`)}
+                            </Button> 
+                        )}
+                 */}
             {!disableCurrencySelect && onCurrencySelect && (
                 <CurrencySearchModal
                     isOpen={modalOpen}
