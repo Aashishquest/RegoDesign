@@ -20,7 +20,7 @@ export default function SwapHeader({ input = undefined, output = undefined }: an
     const [animateWallet, setAnimateWallet] = useState(false)
     const { account, chainId, library } = useActiveWeb3React()
     return (
-        <div className="flex justify-between space-x-2 bg-dark-600">
+        <div className="swap-header-outer flex justify-between space-x-2 bg-dark-600">
             <div className="grid grid-cols-2 p-3px bg-dark-600">
                 <NavLink
                     className="flex-col flex items-center pb-4 pt-3 justify-center px-4 md:px-10 text-center text-secondary hover:text-high-emphesis text-base font-medium"
@@ -81,7 +81,7 @@ export default function SwapHeader({ input = undefined, output = undefined }: an
                             <Gas />
                         </div>
                     </div> */}
-                    <div className="bg-dark-600 rounded-sm h-full w-full md:px-2 pb-5 pr-3 pl-3 pt-2">
+                    <div className=" settingicon bg-dark-600 rounded-sm h-full w-full md:px-2 pb-5 pr-3 pl-3 pt-2">
                         <Settings />
                     </div>
                     {/* <button

@@ -431,3 +431,32 @@ header.flex.flex-row.w-screen{
 .khzMpN, .text-2xl.font-bold.whitespace-nowrap{
   color: #000 !important;
 }
+#connect-wallet .khOVya{
+  color: #fff !important;
+}
+.iOQAou {
+    border: none !important;
+    border-radius: 4px !important;
+}
+.outer-middle-box .flex-col.text-high-emphesis.text-base.font-medium.font-bold.text-high-emphesis{
+  height: 20px !important;
+}
+.swap-outer-box .swap-header-outer{
+background-color: red;
+}
+.swap-outer-box .swap-header-outer .settingicon{
+  padding: 0 !important;
+}
+.sc-gqPbQI.eKMqlC .khzMpN {
+    font-size: 16px !important;
+    padding: 10px !important;
+}
+.sc-gqPbQI.eKMqlC .flex.items-center.rounded.bg-dark-600.space-x-3 {
+    padding: 0 !important;
+}
+.gcwMNb {
+    color: #000 !important;
+}
+iframe{
+  display: none !important;
+}

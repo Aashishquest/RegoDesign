@@ -318,8 +318,8 @@ export default function Swap() {
                 onConfirm={handleConfirmTokenWarning}
             />
             <SwapPoolTabs active={'swap'} />
-            <div className="bg-dark-900 w-full max-w-2xl rounded">
-                <SwapHeader input={currencies[Field.INPUT]} output={currencies[Field.OUTPUT]} />
+            <div className="swap-outer-box bg-dark-900 w-full max-w-2xl rounded">
+                <SwapHeader  input={currencies[Field.INPUT]} output={currencies[Field.OUTPUT]} />
                 <Wrapper id="swap-page">
                     <ConfirmSwapModal
                         isOpen={showConfirm}
