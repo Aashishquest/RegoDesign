@@ -123,7 +123,7 @@ input:focus {
   padding-right: 15px !important;
 }
 * {
-  stroke: grey!important;
+  stroke: #7c7c7d!important;
 }
 
 /* .cYWgln{
@@ -313,7 +313,7 @@ header.flex.flex-row.w-screen{
   font-size: 0.875rem !important;
   line-height: 1.25rem !important;
   color: #fff !important;
-  background-color: #001070!important;
+  background-color: none!important;
 }
 
 .border-gradient-r-pink-red-light-brown-dark-pink-red{
@@ -331,7 +331,7 @@ header.flex.flex-row.w-screen{
 
 .text-high-emphesis {
   --tw-text-opacity: 1 !important;
-  color:grey!important;
+  color:black!important;
   border-color:#000!important;
 }
 
@@ -397,7 +397,7 @@ header.flex.flex-row.w-screen{
 }
 .sc-htpNat.sc-hmXxxW.sc-cqCuEk.sc-BngTV.fZiqYM{
   background-color: transparent !important;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4) !important;
+  box-shadow: 0 0 10px red !important;
 }
 .eqsBsF{
   
@@ -452,11 +452,72 @@ background-color: red;
     padding: 10px !important;
 }
 .sc-gqPbQI.eKMqlC .flex.items-center.rounded.bg-dark-600.space-x-3 {
-    padding: 0 !important;
+    padding: 0.2 !important;
 }
 .gcwMNb {
     color: #000 !important;
 }
 iframe{
   display: none !important;
+}
+.elRDOC:hover{
+  background-color: rgb(102, 144, 212)!important;
+}
+.gBTQyo {
+  color:#7c7c7d!important;
+}
+.css-12a3kkh{
+  color:#7c7c7d!important;
+}
+.css-djrxae {
+  color:#7c7c7d!important;
+}
+.css-99fi8c{
+  color:#000b4f!important;
+}
+.css-165qfk5{
+  font-weight: 500!important;
+}
+.bg-blue.w-full.rounded.text-base.text-high-emphesis.px-4.py-3 {
+  background-color:white!important;
+ border-width: 1%!important;
+  border: 2px solid #000!important;
+}
+.bg-pink.w-full.rounded.text-base.text-high-emphesis.px-4.py-3 {
+  background-color:white!important;
+  border-width: 1%!important;
+  border: 2px solid #000!important;
+  color:#000!important;
+}
+
+.flex.flex-grow.justify-center.items-center.h-14.mt-6.rounded.bg-dark-750.text-high-emphesis{
+  color:white!important;
+}
+.text-base.font-semibold.text-high-emphesis{
+  color:white!important;
+}
+.css-1ieyfqs{
+  color:black!important;
+}
+.sc-iRbamj.etaesN.css-q4p97y{
+  color:black!important;
+}
+.sc-iRbamj.etaesN.css-4wozcx{
+  color:black!important;
+}
+.text-sm.font-bold.text-green{
+  color:black!important;
+
+}
+.text-baseline.text-primary.whitespace-nowrap.text-high-emphesis{
+  color:#000b4f!important;
+}
+.sc-eerKOB.jtZBVY{
+  color:white!important;
+}
+.sc-iRbamj.fAkedb.css-165qfk5{
+color:#080808!important;
+}
+.etaesN{
+  color:#080808!important;
 }
